@@ -5,13 +5,12 @@ export const SocialHeaderSec = styled.div`
   background: #3888C7;
   border: 1px;
   border-bottom-style: solid;
-  transition: top 0.2s ease-in-out;
-`
+`;
 
 export const SocialHeaderText = styled.p`
   margin-top: 0px;
   margin-bottom: 0px;
-`
+`;
 
 export const SocialLogo = styled(Link)`
   color: rgba(0, 0, 0, 0.55);
@@ -28,14 +27,16 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const SocialIcons = styled.div`
+  margin-right: 40px;
   display: flex;
-  width: 240px;
-  
+  justify-content: right;
 `;
 
 export const SocialIconLink = styled.a`
+  margin-bottom: 2px;   
+  margin-right: 30px;
   color: rgba(0, 0, 0, 0.55);
-  font-size: 24px;
+  font-size: 22px;
 
   &:hover {
     color: rgba(0, 0, 0, 0.9);
