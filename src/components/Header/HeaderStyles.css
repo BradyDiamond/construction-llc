@@ -2,20 +2,16 @@
   font-size: 10px;
 }
 
-.mobile-brand-style {
+.brand-wrapper {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.mobile-brand-style:hover {
+.brand-wrapper:hover {
   color: rgba(0, 0, 0, 0.9);
-  transition: 0.3s ease-out;
-  }
+  transition: color 0.3s ease-in;
+}
 
 @media screen and (min-width: 721px) {
-
-  .mobile-brand-style {
-    text-align: right;
-  }
 
   .mobile-socials{
    display: none;

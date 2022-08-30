@@ -1,11 +1,8 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { SocialIcons, SocialIconLink, SocialHeaderSec, LinkSec, EmailAddress, PhoneNumber,
-  MobileEmailAddress, MobilePhoneNumber, MobileLinkSec, MobileSocialIcons } from './Header.elements';
+import { SocialIcons, SocialIconLink, SocialHeaderSec, LinkSec, EmailAddress, PhoneNumber, MobileSocialIcons } from './Header.elements';
 import { FaYoutube, FaFacebook } from 'react-icons/fa';
 import { AiOutlineMail} from 'react-icons/ai';
 import { BsGoogle, BsTelephoneFill } from 'react-icons/bs';
@@ -39,9 +36,8 @@ class Header extends React.Component {
           </SocialIcons>
         </SocialHeaderSec> 
         <Navbar expand='md' sticky='top' style={{ background: '#3888C7', fontWeight: 'bold'}}>
-          <Row>
-            <Col lg={true}>
-              <Navbar.Brand style={{ marginLeft: '30px', marginRight: '10px'}} className='mobile-brand-style' href="/">Contractors LLC</Navbar.Brand>
+          <Container>
+          <Navbar.Brand style={{ marginLeft: '10px', marginRight: '20px', color: 'rgba(0, 0, 0, 0.7)' }} className='mobile-brand-style' href="/">Contractors LLC</Navbar.Brand>
               <MobileSocialIcons className="mobile-socials">
                 <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
                   <FaFacebook />
@@ -52,16 +48,13 @@ class Header extends React.Component {
                 <SocialIconLink href={'//www.google.com'} target="_blank" aria-label="Google">
                   <BsGoogle />
                 </SocialIconLink>
-                <SocialIconLink>
+                <SocialIconLink href='tel:3608675309'>
                   <BsTelephoneFill />
                 </SocialIconLink>
-                <SocialIconLink>
+                <SocialIconLink href="mailto: example@example.com">
                   <AiOutlineMail />
                 </SocialIconLink>
               </MobileSocialIcons>
-            </Col>
-          </Row>
-          <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
