@@ -1,23 +1,21 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './Header/Header';
-import Test from './FakeBodyForTest';
+import Footer from './Footer/Footer';
+import Home from './pages/Home/Home';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className='body'>
-        <h1>body</h1>
-        <Test />
-        <Test />
-        <Test />
-        <Test />
-      </div>
-      <div className='footer'>
-        <h1>footer</h1>  
-      </div>
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
