@@ -36,8 +36,11 @@ class Header extends React.Component {
           </SocialIcons>
         </SocialHeaderSec> 
         <Navbar expand='md' sticky='top' style={{ background: '#3888C7', fontWeight: 'bold'}}>
+
+        <Navbar.Brand style={{ marginLeft: '35px', marginRight: '20px', color: 'rgba(0, 0, 0, 0.6)' }} className='mobile-brand-style' href="/">Contractors LLC</Navbar.Brand>
           <Container>
-          <Navbar.Brand style={{ marginLeft: '10px', marginRight: '20px', color: 'rgba(0, 0, 0, 0.7)' }} className='mobile-brand-style' href="/">Contractors LLC</Navbar.Brand>
+
+              {/* Mobile Icons Section - will display on mobile only while the desktop view gets hidden */}
               <MobileSocialIcons className="mobile-socials">
                 <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
                   <FaFacebook />
