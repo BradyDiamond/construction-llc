@@ -1,0 +1,10 @@
+.mobile-socials {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 721px) {
+
+  .mobile-socials{
+   display: none;
+  }
+}
