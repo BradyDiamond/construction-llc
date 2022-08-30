@@ -2,15 +2,6 @@
   font-size: 10px;
 }
 
-.brand-wrapper {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.brand-wrapper:hover {
-  color: rgba(0, 0, 0, 0.9);
-  transition: color 0.3s ease-in;
-}
-
 @media screen and (min-width: 721px) {
 
   .mobile-socials{
