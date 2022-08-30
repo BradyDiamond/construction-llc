@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const SocialHeaderSec = styled.div`
- width: 100%;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 5px;
   padding-left: 30px;
@@ -135,7 +135,7 @@ export const MobileSocialIcons = styled.div`
   }
 
   @media screen and (min-width: 721px) {
-    isplay: none;
+    display: none;
 
  }
 `;
