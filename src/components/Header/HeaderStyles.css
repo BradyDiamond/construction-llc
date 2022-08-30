@@ -1,0 +1,23 @@
+.mobile-socials {
+  font-size: 10px;
+}
+
+.mobile-brand-style {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-brand-style:hover {
+  color: rgba(0, 0, 0, 0.9);
+  transition: 0.3s ease-out;
+  }
+
+@media screen and (min-width: 721px) {
+
+  .mobile-brand-style {
+    text-align: right;
+  }
+
+  .mobile-socials{
+   display: none;
+  }
+}

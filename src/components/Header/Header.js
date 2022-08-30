@@ -1,9 +1,11 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { SocialIcons, SocialIconLink, SocialHeaderSec, LinkSec, EmailAddress, PhoneNumber } from './Header.elements';
+import { SocialIcons, SocialIconLink, SocialHeaderSec, LinkSec, EmailAddress, PhoneNumber,
+  MobileEmailAddress, MobilePhoneNumber, MobileLinkSec, MobileSocialIcons } from './Header.elements';
 import { FaYoutube, FaFacebook } from 'react-icons/fa';
 import { AiOutlineMail} from 'react-icons/ai';
 import { BsGoogle, BsTelephoneFill } from 'react-icons/bs';
@@ -37,25 +39,35 @@ class Header extends React.Component {
           </SocialIcons>
         </SocialHeaderSec> 
         <Navbar expand='md' sticky='top' style={{ background: '#3888C7', fontWeight: 'bold'}}>
+          <Row>
+            <Col lg={true}>
+              <Navbar.Brand style={{ marginLeft: '30px', marginRight: '10px'}} className='mobile-brand-style' href="/">Contractors LLC</Navbar.Brand>
+              <MobileSocialIcons className="mobile-socials">
+                <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
+                  <FaFacebook />
+                </SocialIconLink>
+                <SocialIconLink href={'//www.youtube.com'} target="_blank" aria-label="Youtube">
+                  <FaYoutube />
+                </SocialIconLink>
+                <SocialIconLink href={'//www.google.com'} target="_blank" aria-label="Google">
+                  <BsGoogle />
+                </SocialIconLink>
+                <SocialIconLink>
+                  <BsTelephoneFill />
+                </SocialIconLink>
+                <SocialIconLink>
+                  <AiOutlineMail />
+                </SocialIconLink>
+              </MobileSocialIcons>
+            </Col>
+          </Row>
           <Container>
-            <Navbar.Brand href="#home">Contractors LLC</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Gallery</Nav.Link>
-                <Nav.Link href="#link">Services</Nav.Link>
-                <NavDropdown title="Contact" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/gallery">Gallery</Nav.Link>
+                <Nav.Link href="/services">Services</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

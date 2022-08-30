@@ -8,6 +8,10 @@ export const SocialHeaderSec = styled.div`
   background: #3888C7;
   border: 1px;
   border-bottom-style: solid;
+
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const SocialLogo = styled(Link)`
@@ -45,6 +49,11 @@ export const SocialIconLink = styled.a`
 export const LinkSec = styled.div`
   align-items: left;
   position: absolute;
+
+  @media screen and (max-width: 720px) {
+    position: right;
+    align-items: right;
+  }
 `;
 
 export const EmailAddress = styled.a`
@@ -59,6 +68,7 @@ export const EmailAddress = styled.a`
     color: rgba(0, 0, 0, 0.9);
     transition: 0.3s ease-out;
   }
+
 `;
 
 export const PhoneNumber = styled.a`
@@ -72,4 +82,59 @@ export const PhoneNumber = styled.a`
     color: rgba(0, 0, 0, 0.9);
     transition: 0.3s ease-out;
   }
+`;
+
+export const MobileEmailAddress = styled.a`
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease-out;
+  }
+
+  @media screen and (max-width: 720px) {
+    font-size: 14px
+  }
+`;
+
+export const MobilePhoneNumber = styled.a`
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease-out;
+  }
+
+  @media screen and (max-width: 720px) {
+    font-size: 14px
+  }
+`;
+
+export const MobileLinkSec = styled.div`
+    text-align: right;
+`;
+
+export const MobileSocialIcons = styled.div`
+
+  @media screen and (max-width: 720px) {
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    justify-content: right;
+    
+  }
+
+  @media screen and (min-width: 721px) {
+    isplay: none;
+
+ }
 `;
