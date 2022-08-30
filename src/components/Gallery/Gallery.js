@@ -4,7 +4,7 @@
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from "react";
 
-function Header() {
+function Gallery() {
   return (
     <h1>Testing Gallery</h1>
 
@@ -12,4 +12,4 @@ function Header() {
   }
   
   
-export default Header;
+export default Gallery;
