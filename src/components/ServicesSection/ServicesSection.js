@@ -5,7 +5,7 @@ const ServicesSection = () => {
   return(
     <>
       <ServicesSec>
-        
+
       </ServicesSec>
     </>
   )
