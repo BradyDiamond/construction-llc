@@ -6,7 +6,7 @@ export const ServicesSec = styled.div`
 `;
 
 export const ContactSection = styled.div`
-  padding: 200px 0px;
+  padding: 100px 0px;
   background: #60A0D2;
   text-align: center;
 `;
@@ -30,22 +30,25 @@ export const ContactPhoneNumber = styled.h2`
 
 export const ServicesListSec = styled.div`
   padding: 50px 0px;
-  background: white;
+  background: #60A0D2;
 `;
 
 export const ListTitle = styled.h1`
+  margin-bottom: 20px;
   text-align: center;
   text-decoration: underline;
 `;
 
 export const ServicesList = styled.ul`
-  text-decoration: none;
+  list-style-type: none;
 `;
 
 export const Services = styled.li`
   text-align: center;
+  font-weight: bolder;
 `;
 
-export const ServicesTagline = styled.h5`
-  
+export const ServicesTagline = styled.h4`
+  margin-bottom: 50px;
+  text-align: center;
 `;

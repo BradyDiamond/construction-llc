@@ -6,7 +6,7 @@ const PhotoBanner = () => {
   return (
     <>
     <PhotoBannerSec>
-      <BannerImg src={BackgroundBanner} />
+      <BannerImg src={BackgroundBanner} alt='Banner image that shows kitchens, a bedroom and a bathroom' />
     </PhotoBannerSec>
     </>
   )
