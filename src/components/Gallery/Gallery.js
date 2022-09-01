@@ -6,7 +6,12 @@ import React from "react";
 
 function Gallery() {
   return (
-    <h1>Testing Gallery</h1>
+    <div>
+      <div style={{ padding: '300px 0px', background: 'gray'}}>
+
+      </div>
+    </div>
+    
 
   )
   }

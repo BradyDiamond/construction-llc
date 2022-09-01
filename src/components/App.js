@@ -1,25 +1,27 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Home from './pages/Home/Home';
 import Gallery from './Gallery/Gallery';
-import Services from './pages/Services/Services';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
+
+
+
   return (
     <div className="App">
-      <Router>
-        <Header/>
+      <Router>     
+        <ScrollToTop />
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/gallery' exact element={<Gallery />} />
-          <Route path='/services' exact element={<Services />} />
         </Routes>
         <Footer />
-      </Router>
+      </Router> 
+
     </div>
   );
 }
