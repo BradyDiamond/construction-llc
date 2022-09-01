@@ -5,10 +5,10 @@ export const PhotoBannerSec = styled.div`
   position: sticky;
   width: 100%;
   border-top: 1px solid black;
-  z-index: -1;
+  z-index: -5;
 `;
 
 export const BannerImg = styled.img`
   width: 100%;
-  z-index: -1
+  z-index: -5;
 `;

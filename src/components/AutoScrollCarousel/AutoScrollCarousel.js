@@ -29,19 +29,13 @@ export default function AutoScrollCarousel() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         }
       },
       {
         breakpoint: 730,
         settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 380,
-        settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
         }
       }
     ]

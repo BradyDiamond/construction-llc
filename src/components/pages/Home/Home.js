@@ -10,7 +10,6 @@ import { SocialIcons, SocialIconLink, SocialHeaderSec, LinkSec, EmailAddress, Ph
 import { FaYoutube, FaFacebook } from 'react-icons/fa';
 import { AiOutlineMail} from 'react-icons/ai';
 import { BsGoogle, BsTelephoneFill } from 'react-icons/bs';
-import '../../Header/HeaderStyles.css';
 import '../../App.css';
 
 const Home = () => {

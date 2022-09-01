@@ -3,23 +3,6 @@
   padding: 0;
 }
 
-.nav-list {
-  text-align: center;
-}
-
-.link {
-  text-decoration: none;
-  display: inline;
-  padding: 20px 20px;
-  font-weight: 700;
-  font-size: large;
-  cursor: pointer;
-}
-
-.hero {
-  color: lightblue;
-}
-
 .top-btn-position {
   text-align: center;
   position: fixed;
@@ -36,4 +19,28 @@
   background-color: #fff;
   color: #333;
   cursor: pointer;
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.home {
+  position: sticky;
+  top: 0;
+  z-index: -5;
+}
+
+.mobile-socials {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 721px) {
+
+  .mobile-socials{
+   display: none;
+  }
 }
