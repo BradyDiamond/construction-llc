@@ -52,39 +52,53 @@ export default function AutoScrollCarousel() {
   const bannerImages = [
     {
       imageSrc:
-        'images/services-page-banner/hardwood-floors.webp'
+        'images/services-page-banner/hardwood-floors.webp',
+      alt:
+        'A remodeled living room with hardwood floors'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen.webp'
+        'images/services-page-banner/kitchen.webp',
+      alt:
+        'A minimalist styled kitchen'
     },
     {
       imageSrc:
-        'images/services-page-banner/bathroom.webp'
+        'images/services-page-banner/bathroom.webp',
+      alt:
+        'Remodeled bathroom with overhead shower and granite sinks'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen-modern.webp'
+        'images/services-page-banner/kitchen-modern.webp',
+      alt:
+        'A modern styled kitchen'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen-remodel.webp'
+        'images/services-page-banner/kitchen-remodel.webp',
+      alt:
+        'A remodeled kitchen displaying a splash wall above the oven'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen-floor-remodel.webp'
+        'images/services-page-banner/kitchen-floor-remodel.webp',
+      alt:
+        'Dark hardwood floors in a kitchen'
     },
     {
       imageSrc:
-        'images/services-page-banner/traditional-kitchen-remodel.webp'
+        'images/services-page-banner/traditional-kitchen-remodel.webp',
+      alt:
+        'A traditional styled kitchen'
     },
   ]
 
   return (
     <>
       <Slider {...sliderSettings}>
-        {bannerImages.map((card, index) => (          
-          <img alt={card.title} src={card.imageSrc} key={index} height="380" border="1px solid black" className="" />          
+        {bannerImages.map((image, index) => (          
+          <img alt={image.alt} src={image.imageSrc} key={index} height="380" border="1px solid black" className="" />          
         ))}
       </Slider>
     </>
