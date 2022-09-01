@@ -2,3 +2,38 @@
   margin: 0;
   padding: 0;
 }
+
+.nav-list {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  display: inline;
+  padding: 20px 20px;
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer;
+}
+
+.hero {
+  color: lightblue;
+}
+
+.top-btn-position {
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 5;
+}
+
+.top-btn-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
