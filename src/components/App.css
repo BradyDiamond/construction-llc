@@ -2,3 +2,45 @@
   margin: 0;
   padding: 0;
 }
+
+.top-btn-position {
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 5;
+}
+
+.top-btn-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.home {
+  position: sticky;
+  top: 0;
+  z-index: -5;
+}
+
+.mobile-socials {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 721px) {
+
+  .mobile-socials{
+   display: none;
+  }
+}

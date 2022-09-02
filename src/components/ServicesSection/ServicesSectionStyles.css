@@ -1,0 +1,13 @@
+.styled-hr {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  height: 1px;
+  background: #000000;
+  width: 80%;
+}
+
+.services-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7)
+}

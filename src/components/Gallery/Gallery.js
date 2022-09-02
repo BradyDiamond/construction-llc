@@ -26,6 +26,7 @@ function Gallery() {
     },
   ]
   return (
+
     <>
     <h1>Testing Gallery</h1>
   
@@ -38,9 +39,15 @@ function Gallery() {
         )
       })}
     </div>
+    {/* <div>
+      <div style={{ padding: '300px 0px', background: 'gray'}}>
+
+      </div>
+    </div> */}
     
     </>
 
+    
     
 
   )
