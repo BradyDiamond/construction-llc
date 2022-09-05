@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
+
 padding: 20px 0px;
 background: #3888C7;
 img {
@@ -9,29 +10,16 @@ img {
   height: 40vw;
 }
 @media screen and (max-width: 720px) {
-  display: none;
 }
 `;
 
 export const CardA = styled.div`
   align-items: left;
-  // position: absolute; 
-  @media screen and (max-width: 720px) {
-    position: right;
-    align-items: right;
 
-  }
 `;
 
 export const CardB = styled.div` {
   align-items: left;         
-  // position: absolute;
-  @media screen and (max-width: 720px) {       
-    position: right;
-    align-items: right;
-
-
-}
 `;
 
 export const Img = styled.img`
