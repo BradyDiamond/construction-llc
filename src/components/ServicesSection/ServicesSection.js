@@ -1,46 +1,90 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { ServicesSec, ContactSection, ContactHeader, ContactPhoneNumber, ContactEmail, ServicesListSec, ListTitle, ServicesList, Services, ServicesTagline } from './ServicesSection.elements';
 import './ServicesSectionStyles.css';
 import CardFlip from '../CardFlip/CardFlip';
-import  '../CardFlip/CardFlip.css';
+import Map from '../CardFlip/img/service-area-map.png';
+
 
 const ServicesSection = () => {
   return(
     <>
       <ServicesSec>
-        <Container>
+      
+        <hr className="styled-hr" />
+          <div className='services-card-flip'>
+            <div className='services-tagline'>
+              <ServicesTagline>ContractorsLLC</ServicesTagline>
+            </div>
+            <CardFlip 
+            img="https://images.unsplash.com/photo-1586864387789-628af9feed72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            text="about us"
+            img2="https://images.pexels.com/photos/11590268/pexels-photo-11590268.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            textFlipped0="Lorem ipsum dolor sit amet-"
+            textFlipped1="consectetur adipiscing elit-"
+            textFlipped2="Ut cursus enim id suscipit pretiumr-"
+            textFlipped3="met consectetur dolor finibus vitae-"
+            textFlipped4="Ngravida laoreet ante nec sollicitudin-"
+            textFlipped5="Donec nisl urna, iaculis qui-" 
+            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+            <div className='services-tagline'>
+              <ServicesTagline>Your Neighborhood Project People</ServicesTagline>
+            </div>
+          <div className='services-card-flip'>
+            <CardFlip 
+            img="https://images.unsplash.com/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80"
+            text="services"
+            img2="https://images.pexels.com/photos/11590268/pexels-photo-11590268.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            textFlipped0="Deck Construction & Repair-"
+            textFlipped1="Roof and Exterior Cleaning-"
+            textFlipped2="Gutter Cleaning & Repair-"
+            textFlipped3="Remodels-"
+            textFlipped4="Dry Rot Repair-"
+            textFlipped5="Window Replacement-" 
+            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+          </div> 
+          <div className='services-tagline'>
+              <ServicesTagline>Established 2005</ServicesTagline>
+          </div>
+          <div className='services-card-flip'>
+            <CardFlip 
+            img="https://images.unsplash.com/photo-1426927308491-6380b6a9936f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+            text="gallery"
+            img2="https://images.pexels.com/photos/11590268/pexels-photo-11590268.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            textFlipped0="Deck Construction & Repair-"
+            textFlipped1="Roof and Exterior Cleaning-"
+            textFlipped2="Gutter Cleaning & Repair-"
+            textFlipped3="Remodels-"
+            textFlipped4="Dry Rot Repair-"
+            textFlipped5="Window Replacement-" 
+            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+          </div> 
+          <div className='services-tagline'>
+              <ServicesTagline>CALL (360)555-5555 FOR A QUOTE!</ServicesTagline>
+          </div>
+          <div className='services-card-flip'>
+            <CardFlip 
+            img="https://images.unsplash.com/photo-1567361809214-b97d828071d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80"
+            text="map"
+            img2={Map}
+            textFlipped0="SE Portland-"
+            textFlipped1="Clackamas-"
+            textFlipped2="Oregon City-"
+            textFlipped3="Lake Oswego-"
+            textFlipped4="Beavercreek-"
+            textFlipped5="Mollalla-" 
+            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+          </div> 
+          <div className='services-tagline'>
+              <ServicesTagline>CALL (360)555-5555 FOR A QUOTE!</ServicesTagline>
+          </div>
+        </div>
+         <Container>
           <ContactSection>
-            <Row>
-              <Col>
-                <ContactHeader>For Quotes & Questions:</ContactHeader>
-              </Col>
-              <Col lg>
-                <ContactPhoneNumber>(360) 867-5309</ContactPhoneNumber>
-              </Col>
-              <Col lg>
-                <ContactEmail>example@example.com</ContactEmail>
-              </Col>
-            </Row>
+
           </ContactSection>
         </Container>
-        <hr className="styled-hr" />
-        <div className='services-card-flip'>
-          <CardFlip 
-          img="https://images.pexels.com/photos/13095955/pexels-photo-13095955.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-          text="TEST TEXT"
-          img2="https://images.pexels.com/photos/11590268/pexels-photo-11590268.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-          textFlipped="TEST TEXT2" />
-        </div>
-        <ServicesListSec>
-          <ListTitle>Services</ListTitle>
-          <ServicesList>
-            <ServicesTagline>"Whatever your homes throws we will catch."</ServicesTagline>
-            <Services></Services>
-          </ServicesList>
-        </ServicesListSec>
+
       </ServicesSec>
     </>
   )

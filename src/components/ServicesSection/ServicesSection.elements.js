@@ -47,5 +47,5 @@ export const Services = styled.li`
 `;
 
 export const ServicesTagline = styled.h5`
-  
+  text-align: right;
 `;
