@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ServicesSec = styled.div`
   padding-bottom: 100px;
-  background: #60A0D2;
+  background: white;
 `;
 
 export const ContactSection = styled.div`
