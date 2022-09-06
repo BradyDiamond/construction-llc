@@ -8,7 +8,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-
 const CardFlip = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
   
@@ -23,7 +22,7 @@ const CardFlip = (props) => {
   
          <>
         <Container>
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.6}>
           <Row >
             <CardA onClick={handleClick}>  
               <Col-6>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ServicesSec = styled.div`
   padding-bottom: 100px;
-  background: #60A0D2;
+  background: white;
 `;
 
 export const ContactSection = styled.div`
@@ -47,9 +47,14 @@ export const Services = styled.li`
 `;
 
 export const ServicesTagline = styled.h5`
+  z-index: -1;
   text-align: right;
-  height:20vh;
+  height:-25vh;
   @media screen and (max-width: 720px) {
     display: none;
+  }
+  .CardFlip{
+    z-index: 2;
+    position: absolute;
   }
 `;

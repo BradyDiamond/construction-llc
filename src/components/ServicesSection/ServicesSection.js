@@ -4,6 +4,7 @@ import { ServicesSec, ContactSection, ContactHeader, ContactPhoneNumber, Contact
 import './ServicesSectionStyles.css';
 import CardFlip from '../CardFlip/CardFlip';
 import Map from '../CardFlip/img/service-area-map.png';
+import Logo from '../CardFlip/img/logo.jpeg';
 
 
 const ServicesSection = () => {
@@ -14,7 +15,7 @@ const ServicesSection = () => {
         <hr className="styled-hr" />
           <div className='services-card-flip'>
             <div className='services-tagline'>
-              <ServicesTagline>ContractorsLLC</ServicesTagline>
+              <ServicesTagline><img src={Logo} alt="" /></ServicesTagline>
             </div>
             <CardFlip 
             img="https://images.unsplash.com/photo-1586864387789-628af9feed72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
@@ -29,7 +30,7 @@ const ServicesSection = () => {
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
             <br/>
             <div className='services-tagline'>
-              <ServicesTagline>Your Neighborhood Project People</ServicesTagline>
+            <ServicesTagline><img src={Logo} alt="" /></ServicesTagline>
             </div>
           <div className='services-card-flip'>
             <CardFlip 
@@ -46,7 +47,7 @@ const ServicesSection = () => {
           </div> 
           <br/>
           <div className='services-tagline'>
-              <ServicesTagline>Established 2005</ServicesTagline>
+            <ServicesTagline><img src={Logo} alt="" /></ServicesTagline>
           </div>
           <div className='services-card-flip'>
             <CardFlip 
@@ -63,7 +64,7 @@ const ServicesSection = () => {
           </div> 
           <br/>
           <div className='services-tagline'>
-              <ServicesTagline>CALL (360)555-5555 FOR A QUOTE!</ServicesTagline>
+          <ServicesTagline><img src={Logo} alt="" /></ServicesTagline>
           </div>
           <div className='services-card-flip'>
             <CardFlip 
@@ -79,7 +80,7 @@ const ServicesSection = () => {
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
           </div> 
           <div className='services-tagline'>
-              <ServicesTagline>example@example.com</ServicesTagline>
+          <ServicesTagline><img src='' alt="" /></ServicesTagline>
           </div>
         </div>
          <Container>
