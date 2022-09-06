@@ -1,5 +1,6 @@
 import React from "react";
 import './Gallery.css';
+import { useState } from "react";
 import Img1 from './Images/contractors1.jpg';
 import Img2 from './Images/contractors2.jpg';
 import Img3 from './Images/contractors3.jpg';
@@ -23,17 +24,31 @@ function Gallery() {
     {
       id: 4,
       imgSrc: Img4
-    },
+    }
   ]
-  return (
+  const [model, setModel] = useState(false);
+  const [tempimgSrc, setTempImgSrc] = useState('');
+  
+  const getImg = (imgSrc) => {
+    setTempImgSrc(imgSrc);
+    setModel(true);
 
+  }
+
+  return (
     <>
     <h1>Testing Gallery</h1>
-  
+    <div className={model? "model open" : "model" }>
+      <img src={tempimgSrc} />
+      <div className="modelClose">
+        <i class="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
+      </div> 
+    </div> 
+
     <div className="gallery">
       {data.map((item, index)=> {
-        return(
-          <div className="pics" key={index}>
+        return( 
+          <div className="pics" key={index} onClick={() => getImg(item.imgSrc)} >
             <img src={item.imgSrc} style ={{width: '100%' }}/>
           </div>
         )
@@ -46,12 +61,10 @@ function Gallery() {
     </div> */}
     
     </>
-
-    
-    
-
   )
-  }
+    
+  
+}
   
   
 export default Gallery;
