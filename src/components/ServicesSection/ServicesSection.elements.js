@@ -48,6 +48,7 @@ export const Services = styled.li`
 
 export const ServicesTagline = styled.h5`
   text-align: right;
+  height:20vh;
   @media screen and (max-width: 720px) {
     display: none;
   }

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 import { PropTypes } from 'prop-types';
-import { Container, CardA, CardB, Img, TextBefore, TextFlipped, Popout} from './CardFlip.elements';
+import { Container, CardA, CardB, Img, Img2, TextBefore, TextFlipped, Popout} from './CardFlip.elements';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -31,8 +31,7 @@ const CardFlip = (props) => {
               </Col-6>
               <Col-6>
                 <TextBefore>  
-                  {props.text}
-                  
+                  {props.text}                   
                 </TextBefore>  
               </Col-6>                 
             </CardA>  
@@ -42,7 +41,7 @@ const CardFlip = (props) => {
           <Row>
             <CardB onClick={handleClick} >  
               <Col-6>  
-                <Img src={props.img2} alt="" />  
+                <Img2 src={props.img2} alt="" />  
               </Col-6>  
               <Col-6>
                 <TextFlipped>               

@@ -2,14 +2,12 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-transition: all 0.6s ease-in-out;
 padding: 20px 0px;
 background: #3888C7;
 img {
-  width: 40vw;
-  height: 40vw;
-}
-@media screen and (max-width: 720px) {
+  width: 35vw;
+  height: 35vw;
+  transform-style: preserve-3d;
 }
 `;
 
@@ -23,14 +21,30 @@ export const CardB = styled.div` {
 `;
 
 export const Img = styled.img`
-  margin-left: 6vw;  
+  margin-left:5vw;  
   color: rgba(0, 0, 0, 0.55);
   height: 200%;
   width: 200%;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
+  border-radius:50%;
+  border-bottom-right-radius:50%;
+  position: fixed;
+  margin-top: -10vh;
+}
+`;
+
+export const Img2 = styled.img`
+  margin-right: -7.5vw;  
+  color: rgba(0, 0, 0, 0.55);
+  height: 200%;
+  width: 200%;
+  text-decoration: none;
+  cursor: pointer;
+  border-top-right-radius:50%;
+  border-bottom-right-radius:50%;
+  position: fixed;
+  margin-top: 3vh;
 }
 `;
 
@@ -46,6 +60,8 @@ export const TextBefore = styled.div`
   margin-right: 6vw;
   color: white;
   text-shadow: 12px 12px 14px #000000;
+  object-fit: cover;
+  flex-direction: center;
 `;  
 
 export const TextFlipped = styled.div`
