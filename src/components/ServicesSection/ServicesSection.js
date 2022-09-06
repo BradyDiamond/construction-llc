@@ -19,7 +19,7 @@ const ServicesSection = () => {
             <CardFlip 
             img="https://images.unsplash.com/photo-1586864387789-628af9feed72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
             text="about us"
-            img2="https://images.pexels.com/photos/11590268/pexels-photo-11590268.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            img2="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
             textFlipped0="Lorem ipsum dolor sit amet-"
             textFlipped1="consectetur adipiscing elit-"
             textFlipped2="Ut cursus enim id suscipit pretiumr-"
@@ -27,6 +27,7 @@ const ServicesSection = () => {
             textFlipped4="Ngravida laoreet ante nec sollicitudin-"
             textFlipped5="Donec nisl urna, iaculis qui-" 
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+            <br/>
             <div className='services-tagline'>
               <ServicesTagline>Your Neighborhood Project People</ServicesTagline>
             </div>
@@ -34,7 +35,7 @@ const ServicesSection = () => {
             <CardFlip 
             img="https://images.unsplash.com/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80"
             text="services"
-            img2="https://images.pexels.com/photos/11590268/pexels-photo-11590268.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            img2="https://images.unsplash.com/photo-1590635023142-73c3d34f2805?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
             textFlipped0="Deck Construction & Repair-"
             textFlipped1="Roof and Exterior Cleaning-"
             textFlipped2="Gutter Cleaning & Repair-"
@@ -43,6 +44,7 @@ const ServicesSection = () => {
             textFlipped5="Window Replacement-" 
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
           </div> 
+          <br/>
           <div className='services-tagline'>
               <ServicesTagline>Established 2005</ServicesTagline>
           </div>
@@ -59,6 +61,7 @@ const ServicesSection = () => {
             textFlipped5="Window Replacement-" 
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
           </div> 
+          <br/>
           <div className='services-tagline'>
               <ServicesTagline>CALL (360)555-5555 FOR A QUOTE!</ServicesTagline>
           </div>
@@ -76,7 +79,7 @@ const ServicesSection = () => {
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
           </div> 
           <div className='services-tagline'>
-              <ServicesTagline>CALL (360)555-5555 FOR A QUOTE!</ServicesTagline>
+              <ServicesTagline>example@example.com</ServicesTagline>
           </div>
         </div>
          <Container>

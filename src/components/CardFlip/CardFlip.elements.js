@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-
+transition: all 0.6s ease-in-out;
 padding: 20px 0px;
 background: #3888C7;
 img {
