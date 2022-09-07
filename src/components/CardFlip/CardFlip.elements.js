@@ -3,9 +3,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 width: 100vw;
+x-overflow: hidden;
 margin-right: -5vw;
 z-index: 1;
 position: relative;
+&:hover {transform: scale(1.039);}
+// for 3 seconds
+transition: transform 0.3s ease-in-out;
 cursor: pointer;
 padding: 0px 0px;
 background: #3888C7;
@@ -14,10 +18,6 @@ img {
   height: 35vw;
   transform-style: preserve-3d;
   box-shadow: 12px 12px 14px #000000;
-}
-
-
- 
 }
 
 `;
@@ -33,10 +33,7 @@ export const CardB = styled.div` {
 `;
 
 export const Img = styled.img`
-  
-
-
-  transition: transform 2s; 
+  transition: transform .2s; 
   margin-left:5vw;  
   color: rgba(0, 0, 0, 0.55);
   height: 200%;
@@ -46,8 +43,7 @@ export const Img = styled.img`
   position: fixed;
   margin-top: -10vh;
   overflow: none;
-  flex-direction: center; 
-  &:hover {transform: rotate(3deg); }
+  flex-direction: center;
 }
 `;
 
@@ -104,6 +100,8 @@ export const TextFlipped = styled.div`
   justify-content: right;
   margin-right: 2.9vw;
   margin-top:5vh;
+  background: transparent;
+  overflow: hidden;; 
   
   
 `;  
