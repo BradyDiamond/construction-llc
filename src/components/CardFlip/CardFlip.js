@@ -22,7 +22,7 @@ const CardFlip = (props) => {
   
          <>
         <Container>
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.6}>
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.006}>
           <Row >
             <CardA onClick={handleClick}>  
               <Col-6>

@@ -49,6 +49,6 @@ export const Services = styled.li`
 `;
 
 export const ServicesTagline = styled.h4`
-  margin-bottom: 50px;
+  height: 20vh;
   text-align: center;
 `;
