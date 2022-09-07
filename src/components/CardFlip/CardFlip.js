@@ -25,24 +25,24 @@ const CardFlip = (props) => {
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.006}>
           <Row >
             <CardA onClick={handleClick}>  
-              <Col-6>
+              <Col>
                 <Img src={props.img} alt="" />
-              </Col-6>
-              <Col-6>
+              </Col>
+              <Col>
                 <TextBefore>  
                   {props.text}                   
                 </TextBefore>  
-              </Col-6>                 
+              </Col>                 
             </CardA>  
           </Row>
         
 
           <Row>
             <CardB onClick={handleClick} >  
-              <Col-6>  
+              <Col>  
                 <Img2 src={props.img2} alt="" />  
-              </Col-6>  
-              <Col-6>
+              </Col>  
+              <Col>
                 <TextFlipped>               
                   {props.textFlipped0}<br/>
                   {props.textFlipped1}<br/>
@@ -52,7 +52,7 @@ const CardFlip = (props) => {
                   {props.textFlipped5}<br/>  
                   {props.textFlipped6}
                 </TextFlipped>          
-              </Col-6>                                                                        
+              </Col>                                                                        
             </CardB>  
           </Row>    
         </ReactCardFlip>
