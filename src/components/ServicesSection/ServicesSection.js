@@ -57,7 +57,7 @@ const ServicesSection = () => {
             <CardFlip 
             img="https://images.unsplash.com/photo-1567361809214-b97d828071d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80"
             text="map"
-            img3={Map}
+            img2={Map}
             textFlipped0="SE Portland-"
             textFlipped1="Clackamas-"
             textFlipped2="Oregon City-"
