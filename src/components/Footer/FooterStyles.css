@@ -1,8 +1,9 @@
 .mobile-socials {
   font-size: 10px;
+  text-align: center;
 }
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 805px) {
 
   .mobile-socials{
    display: none;

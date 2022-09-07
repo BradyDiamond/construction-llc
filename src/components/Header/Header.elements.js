@@ -10,7 +10,7 @@ export const SocialHeaderSec = styled.div`
   border: 1px;
   border-bottom-style: solid;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 850px) {
     display: none;
   }
 `;
@@ -51,7 +51,7 @@ export const LinkSec = styled.div`
   align-items: left;
   position: absolute;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 850px) {
     position: right;
     align-items: right;
   }
@@ -98,7 +98,7 @@ export const MobileEmailAddress = styled.a`
     transition: 0.3s ease-out;
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 850px) {
     font-size: 14px
   }
 `;
@@ -115,7 +115,7 @@ export const MobilePhoneNumber = styled.a`
     transition: 0.3s ease-out;
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 850px) {
     font-size: 14px
   }
 `;
@@ -126,7 +126,7 @@ export const MobileLinkSec = styled.div`
 
 export const MobileSocialIcons = styled.div`
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 955px) {
     display: flex;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -134,7 +134,7 @@ export const MobileSocialIcons = styled.div`
     
   }
 
-  @media screen and (min-width: 721px) {
+  @media screen and (min-width: 955px) {
     display: none;
 
  }
