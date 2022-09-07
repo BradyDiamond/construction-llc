@@ -3,13 +3,14 @@
 import React, { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 import { PropTypes } from 'prop-types';
-import { Container, CardA, CardB, Img, Img2, TextBefore, TextFlipped, Popout} from './CardFlip.elements';
+import { Container, CardA, CardB, Img, Img2, Img3, TextBefore, TextFlipped, Popout} from './CardFlip.elements';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
 const CardFlip = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(false);
   
 
   
@@ -17,6 +18,12 @@ const CardFlip = (props) => {
     setIsFlipped(!isFlipped);
 
   };
+
+  const handleZoom = () => {
+    setIsZoomed(!setIsZoomed);
+
+  };
+
 
     return (
   
@@ -40,7 +47,8 @@ const CardFlip = (props) => {
           <Row>
             <CardB onClick={handleClick} >  
               <Col>  
-                <Img2 src={props.img2} alt="" />  
+                <Img2 src={props.img2} alt="" />
+                <Img3 onClick={handleZoom} src={props.img3} alt="" />    
               </Col>  
               <Col>
                 <TextFlipped>               
@@ -74,6 +82,7 @@ const CardFlip = (props) => {
     textFlippedOuter: PropTypes.string,
     img: PropTypes.string,
     img2: PropTypes.string,
+    img3: PropTypes.string,
   };
   
 
