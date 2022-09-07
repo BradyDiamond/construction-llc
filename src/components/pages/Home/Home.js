@@ -134,16 +134,13 @@ const Home = () => {
       </Navbar>
 
       {/* Sections Begin Here */}
-      {/* <div className='photo-banner'>
+      <div className='photo-banner'>
         <PhotoBanner />
       </div>
       <div className="services" ref={services}>
         <ServicesSection />
         <AutoScrollCarousel />
-      </div> */}
-      <FakeBodyForTest />
-      <FakeBodyForTest />
-      <FakeBodyForTest />
+      </div>
     </>
   );
 };
