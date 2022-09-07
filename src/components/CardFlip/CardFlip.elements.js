@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-
+cursor: pointer;
 padding: 20px 0px;
 background: #3888C7;
 img {
@@ -33,7 +33,7 @@ export const Img = styled.img`
   margin-top: -10vh;
   overflow: none;
   flex-direction: center;
-  pointer: cursor;
+
 
 }
 `;
