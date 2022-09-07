@@ -49,6 +49,14 @@ export const Services = styled.li`
 `;
 
 export const ServicesTagline = styled.h4`
-  height: 20vh;
+  height: 40vh;
   text-align: center;
+  z-index: 0;
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1597340502479-bf4ce2b9cca6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80');
+  filter: grayscale(100%);
+  margin-top: -6vh;
+  margin-bottom: -6vh;
+  transform: scaleX(-1);
+  overflow: hidden;
 `;
