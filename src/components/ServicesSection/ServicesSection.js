@@ -31,8 +31,8 @@ const ServicesSection = () => {
             textFlipped2="Ut cursus enim id suscipit pretiumr-"
             textFlipped3="met consectetur dolor finibus vitae-"
             textFlipped4="Ngravida laoreet ante nec sollicitudin-"
-            textFlipped5="Donec nisl urna, iaculis qui-" 
-            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+           
+            textFlipped6="-Call (971)401-0079 For A FREE Quote!-"/>
             <br/>
             <div className='services-tagline'>
             <ServicesTagline></ServicesTagline>
