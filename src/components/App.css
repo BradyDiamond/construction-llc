@@ -3,10 +3,12 @@
   padding: 0;
 }
 
+/* Style for scroll to top button */
+
 .top-btn-position {
   text-align: center;
   position: fixed;
-  bottom: 15px;
+  bottom: 75px;
   right: 20px;
   z-index: 5;
 }
@@ -28,19 +30,28 @@
   border: 2px solid #fff;
 }
 
-.home {
+/* Photo Banner Styling */
+.photo-banner {
   position: sticky;
   top: 0;
   z-index: -5;
 }
 
+/* Styles for navbar/header */
+
 .mobile-socials {
   font-size: 10px;
 }
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 850px) {
 
   .mobile-socials{
    display: none;
+  }
+}
+
+ @media screen and (max-width: 955px) {
+  .second-navbar-email-phone{
+    display: none;
   }
 }
