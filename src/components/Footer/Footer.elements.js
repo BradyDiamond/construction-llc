@@ -4,7 +4,7 @@ export const FooterSec = styled.div`
   padding: 20px 0px;
   background: #3888C7;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 805px) {
     display: none;
   }
 `;
@@ -13,7 +13,7 @@ export const LinkSec = styled.div`
   align-items: left;
   position: absolute;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 805px) {
     position: right;
     align-items: right;
   }
@@ -49,13 +49,11 @@ export const PhoneNumber = styled.a`
 `;
 
 export const SocialIcons = styled.div`
-  margin-right: 60px;
   display: flex;
   justify-content: right;
 `;
 
 export const SocialIconLink = styled.a`
-  margin-right: 20px;
   color: rgba(0, 0, 0, 0.55);
   font-size: 22px;
 
@@ -71,7 +69,7 @@ export const MobileFooterSec = styled.div`
   background: #3888C7;
   text-align: center;
 
-  @media screen and (min-width: 721px) {
+  @media screen and (min-width: 806px) {
     display: none;
   }
 `;
@@ -87,10 +85,6 @@ export const MobileEmailAddress = styled.a`
     color: rgba(0, 0, 0, 0.9);
     transition: 0.3s ease-out;
   }
-
-  @media screen and (max-width: 720px) {
-    font-size: 14px
-  }
 `;
 
 export const MobilePhoneNumber = styled.a`
@@ -104,10 +98,6 @@ export const MobilePhoneNumber = styled.a`
     color: rgba(0, 0, 0, 0.9);
     transition: 0.3s ease-out;
   }
-
-  @media screen and (max-width: 720px) {
-    font-size: 14px
-  }
 `;
 
 export const MobileLinkSec = styled.div`
@@ -116,13 +106,13 @@ export const MobileLinkSec = styled.div`
 
 export const MobileSocialIcons = styled.div`
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 806px) {
     display: flex;
     justify-content: center;
     
   }
 
-  @media screen and (min-width: 721px) {
+  @media screen and (min-width: 806px) {
     display: none;
 
  }
@@ -130,4 +120,8 @@ export const MobileSocialIcons = styled.div`
 
 export const MobileBrandName = styled.h5`
   text-align: center;
+`;
+
+export const FooterLogo = styled.img`
+
 `;
