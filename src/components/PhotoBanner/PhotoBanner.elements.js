@@ -4,7 +4,6 @@ export const PhotoBannerSec = styled.div`
   top: 0;
   position: sticky;
   width: 100%;
-  border-top: 1px solid black;
   z-index: -5;
 `;
 
