@@ -18,7 +18,9 @@ const ServicesSection = () => {
         <hr className="styled-hr" />
           <div className='services-card-flip'>
             <div className='services-tagline'>
-              <ServicesTagline><img src={Logo} alt="" /></ServicesTagline>
+              <ServicesTagline>
+                <img src="" alt="" />
+              </ServicesTagline>
             </div>
             <CardFlip 
             img="https://images.unsplash.com/photo-1586864387789-628af9feed72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
@@ -33,14 +35,14 @@ const ServicesSection = () => {
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
             <br/>
             <div className='services-tagline'>
-            <ServicesTagline><img src={Logo} alt="" /></ServicesTagline>
+            <ServicesTagline></ServicesTagline>
             </div>
           <div className='services-card-flip'>
             <CardFlip 
             img="https://images.unsplash.com/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80"
             text="services"
             img2="https://images.unsplash.com/photo-1590635023142-73c3d34f2805?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            textFlipped0="Deck Construction & Repair-"
+            textFlipped0="Deck Construction & Repair-"        
             textFlipped1="Roof and Exterior Cleaning-"
             textFlipped2="Gutter Cleaning & Repair-"
             textFlipped3="Remodels-"
@@ -48,9 +50,25 @@ const ServicesSection = () => {
             textFlipped5="Window Replacement-" 
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
           </div> 
-          <br/>
+          <br/><div className='services-tagline'>
+          <ServicesTagline></ServicesTagline>
+          </div>
+          <div className='services-card-flip-map'>
+            <CardFlip 
+            img="https://images.unsplash.com/photo-1567361809214-b97d828071d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80"
+            text="map"
+            img3={Map}
+            textFlipped0="SE Portland-"
+            textFlipped1="Clackamas-"
+            textFlipped2="Oregon City-"
+            textFlipped3="Lake Oswego-"
+            textFlipped4="Beavercreek-"
+            textFlipped5="Mollalla-" 
+            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+          </div>
+          <br/> 
           <div className='services-tagline'>
-            <ServicesTagline><img src={Logo} alt="" /></ServicesTagline>
+            <ServicesTagline></ServicesTagline>
           </div>
           <div className='services-card-flip'>
             <CardFlip 
@@ -66,22 +84,7 @@ const ServicesSection = () => {
             textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
           </div> 
           <br/>
-          <div className='services-tagline'>
-          <ServicesTagline><img src={Logo} alt="" /></ServicesTagline>
-          </div>
-          <div className='services-card-flip'>
-            <CardFlip 
-            img="https://images.unsplash.com/photo-1567361809214-b97d828071d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80"
-            text="map"
-            img2={Map}
-            textFlipped0="SE Portland-"
-            textFlipped1="Clackamas-"
-            textFlipped2="Oregon City-"
-            textFlipped3="Lake Oswego-"
-            textFlipped4="Beavercreek-"
-            textFlipped5="Mollalla-" 
-            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
-          </div> 
+          
           <div className='services-tagline'>
           <ServicesTagline><img src='' alt="" /></ServicesTagline>
           </div>

@@ -3,13 +3,14 @@
 import React, { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 import { PropTypes } from 'prop-types';
-import { Container, CardA, CardB, Img, Img2, TextBefore, TextFlipped, Popout} from './CardFlip.elements';
+import { Container, CardA, CardB, Img, Img2, Img3, TextBefore, TextFlipped, Popout} from './CardFlip.elements';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
 const CardFlip = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(false);
   
 
   
@@ -18,31 +19,38 @@ const CardFlip = (props) => {
 
   };
 
+  const handleZoom = () => {
+    setIsZoomed(!setIsZoomed);
+
+  };
+
+
     return (
   
          <>
         <Container>
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.6}>
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.006}>
           <Row >
             <CardA onClick={handleClick}>  
-              <Col-6>
+              <Col>
                 <Img src={props.img} alt="" />
-              </Col-6>
-              <Col-6>
+              </Col>
+              <Col>
                 <TextBefore>  
                   {props.text}                   
                 </TextBefore>  
-              </Col-6>                 
+              </Col>                 
             </CardA>  
           </Row>
         
 
           <Row>
             <CardB onClick={handleClick} >  
-              <Col-6>  
-                <Img2 src={props.img2} alt="" />  
-              </Col-6>  
-              <Col-6>
+              <Col>  
+                <Img2 src={props.img2} alt="" />
+                <Img3 onClick={handleZoom} src={props.img3} alt="" />    
+              </Col>  
+              <Col>
                 <TextFlipped>               
                   {props.textFlipped0}<br/>
                   {props.textFlipped1}<br/>
@@ -52,7 +60,7 @@ const CardFlip = (props) => {
                   {props.textFlipped5}<br/>  
                   {props.textFlipped6}
                 </TextFlipped>          
-              </Col-6>                                                                        
+              </Col>                                                                        
             </CardB>  
           </Row>    
         </ReactCardFlip>
@@ -74,6 +82,7 @@ const CardFlip = (props) => {
     textFlippedOuter: PropTypes.string,
     img: PropTypes.string,
     img2: PropTypes.string,
+    img3: PropTypes.string,
   };
   
 
