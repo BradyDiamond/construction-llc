@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ServicesSec = styled.div`
   padding-bottom: 100px;
   background: white;
+  // overflow-x: hidden;
 `;
 
 export const ContactSection = styled.div`

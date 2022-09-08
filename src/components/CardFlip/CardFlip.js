@@ -6,6 +6,7 @@ import { PropTypes } from 'prop-types';
 import { Container, CardA, CardB, Img, Img2, Img3, TextBefore, TextFlipped, Popout} from './CardFlip.elements';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { MdBackspace } from 'react-icons/md';
 
 
 const CardFlip = (props) => {
@@ -29,7 +30,7 @@ const CardFlip = (props) => {
   
          <>
         <Container>
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.006}>
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.6}>
           <Row >
             <CardA onClick={handleClick}>  
               <Col>
@@ -48,7 +49,8 @@ const CardFlip = (props) => {
             <CardB onClick={handleClick} >  
               <Col>  
                 <Img2 src={props.img2} alt="" />
-                <Img3 onClick={handleZoom} src={props.img3} alt="" />    
+                <Img3 src={props.img3} alt="" /> 
+                    
               </Col>  
               <Col>
                 <TextFlipped>               
@@ -58,8 +60,11 @@ const CardFlip = (props) => {
                   {props.textFlipped3}<br/>
                   {props.textFlipped4}<br/>  
                   {props.textFlipped5}<br/>  
-                  {props.textFlipped6}
-                </TextFlipped>          
+                  {props.textFlipped6}<br/>
+                  <span className='back-btn'>X</span> 
+                  
+                </TextFlipped>       
+                
               </Col>                                                                        
             </CardB>  
           </Row>    
