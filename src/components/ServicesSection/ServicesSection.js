@@ -83,13 +83,7 @@ const ServicesSection = () => {
           <div className='services-tagline'>
           <ServicesTagline><img src='' alt="" /></ServicesTagline>
           </div>
-        </div>
-         <Container>
-          <ContactSection>
-
-          </ContactSection>
-        </Container>
-
+        </div>   
       </ServicesSec>
     </>
   )

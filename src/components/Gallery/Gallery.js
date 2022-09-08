@@ -79,7 +79,7 @@ function Gallery() {
 
   return (
     <>
-    <h1>Testing Gallery</h1>
+    
     <div className={model? "model open" : "model" }>
       <img src={tempimgSrc} />
       <div className="modelClose">

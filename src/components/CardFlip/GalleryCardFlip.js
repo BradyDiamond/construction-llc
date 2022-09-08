@@ -7,16 +7,17 @@ import { Container, CardA, CardB, Img, Img2, Img3, TextBefore, TextFlipped, Popo
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Gallery from '../Gallery/Gallery';
+import { FaAllergies } from 'react-icons/fa';
 
 
 const GalleryCardFlip = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [isZoomed, setIsZoomed] = useState(false);
-  
+
 
   
   const handleClick = () => {
     setIsFlipped(!isFlipped);
+    
 
   };
 
@@ -41,7 +42,7 @@ const GalleryCardFlip = (props) => {
       
       
             <CardB >
-            <span onClick={handleClick} className='gal-back-btn'>X</span>   
+            <span onClick={handleClick}  className='gal-back-btn'>X</span>   
                 <Gallery />                                                           
             </CardB>  
           
