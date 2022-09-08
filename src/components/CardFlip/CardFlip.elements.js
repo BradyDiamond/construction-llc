@@ -54,13 +54,14 @@ export const Img2 = styled.img`
   border-top-right-radius:50%;
   border-bottom-right-radius:50%;
   position: fixed;
-  margin-top:1vh;
+  margin-top:10vh;
   overflow: none;
   box-shadow: none;
   transform: rotateY(180deg);
   mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 `;
+
 export const Img3 = styled.img`
   margin-left:20vw;  
   color: rgba(0, 0, 0, 0.55);
@@ -70,7 +71,8 @@ export const Img3 = styled.img`
   border-top-right-radius:50%;
   border-bottom-right-radius:50%;
   position: fixed;
-  margin-top: 3vh;
+  margin-top: 8vh;
+  ;
 
 }
 `;
@@ -101,7 +103,7 @@ export const TextFlipped = styled.div`
   width: 100vw;
   position: relative;
   text-align: left;
-  font-size: 3.1vw;
+  font-size: 3.6vw;
   font-weight: bold;
   // justify-content: right;
   margin-left: 2.9vw;
@@ -110,8 +112,9 @@ export const TextFlipped = styled.div`
   color: white;
   text-shadow: 12px 12px 14px #000000;
    font-family: 'Kanit', sans-serif;
-  
-  
+  @media screen and (max-width:750px) {
+    font-size: 4.28vw;
+  }
 `;  
 
 //  function to stop page from exceeding 100vw
