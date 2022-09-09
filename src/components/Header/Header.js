@@ -11,9 +11,7 @@ import Row from 'react-bootstrap/Row';
 import '../App.css';
 
 const Header = () => {
-
   // Setup for displaying phone number and email when top nav gets hidden
-
   const [showMobileIconsOnScroll, setShowMobileIconsOnScroll] = useState(false);
 
   useEffect(() => {
@@ -42,17 +40,12 @@ const Header = () => {
         <SocialIcons>
         <Row>
             <Col>
-              <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
+              <SocialIconLink href={'https://www.facebook.com/profile.php?id=100076005857293'} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <FaFacebook />
               </SocialIconLink>
             </Col>
             <Col>
-              <SocialIconLink href={'//www.youtube.com'} target="_blank" aria-label="Youtube">
-                <FaYoutube />
-              </SocialIconLink>
-            </Col>
-            <Col>
-              <SocialIconLink href={'//www.google.com'} target="_blank" aria-label="Google">
+              <SocialIconLink href={'https://www.google.com/maps/place/Worrall+Contractors+LLC/@45.3230465,-122.5982202,15z/data=!4m5!3m4!1s0x0:0x5c1581eeb5158534!8m2!3d45.3230465!4d-122.5982202'} target="_blank" rel="noopener noreferrer" aria-label="Google">
                 <BsGoogle />
               </SocialIconLink>
             </Col>
@@ -61,7 +54,7 @@ const Header = () => {
       </SocialHeaderSec> 
 
       {/* Second Navbar */}
-      <Navbar expand='md' sticky='top' style={{ background: '#3888C7', fontWeight: 'bold', border: '1px black', borderBottomStyle: 'solid', paddingLeft: '10px'}}>
+      <Navbar expand='md' sticky='top' style={{ background: '#3888C7', fontWeight: 'bold', border: '1px black', borderBottomStyle: 'solid', paddingLeft: '10px' }}>
         
         <Nav.Link href='/'>          
           <Navbar.Brand style={{ color: 'rgba(0, 0, 0, 0.6)' }} className="navbar-brand">
@@ -72,32 +65,27 @@ const Header = () => {
 
         {/* Mobile Icons Section - will display on mobile only while the desktop view gets hidden */}
           <MobileSocialIcons className="mobile-socials">
-          <Row>
-            <Col>
-              <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
-                <FaFacebook />
-              </SocialIconLink>
-            </Col>
-            <Col>
-              <SocialIconLink href={'//www.youtube.com'} target="_blank" aria-label="Youtube">
-                <FaYoutube />
-              </SocialIconLink>
-            </Col>
-            <Col>
-              <SocialIconLink href={'//www.google.com'} target="_blank" aria-label="Google">
-                <BsGoogle />
-              </SocialIconLink>
-            </Col>
-            <Col>
-              <SocialIconLink href='tel:9714010079'>
-                <BsTelephoneFill />
-              </SocialIconLink>
-            </Col>
-            <Col>
-              <SocialIconLink href="mailto: nickworrall0910@gmail.com">
-                <AiOutlineMail />
-              </SocialIconLink>
-            </Col>
+            <Row>
+              <Col>
+                <SocialIconLink href='tel:9714010079'>
+                  <BsTelephoneFill />
+                </SocialIconLink>
+              </Col>
+              <Col>
+                <SocialIconLink href="mailto: nickworrall0910@gmail.com">
+                  <AiOutlineMail />
+                </SocialIconLink>
+              </Col>
+              <Col>
+                <SocialIconLink href={'https://www.facebook.com/profile.php?id=100076005857293'} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <FaFacebook />
+                </SocialIconLink>
+              </Col>
+              <Col>
+                <SocialIconLink href={'https://www.google.com/maps/place/Worrall+Contractors+LLC/@45.3230465,-122.5982202,15z/data=!4m5!3m4!1s0x0:0x5c1581eeb5158534!8m2!3d45.3230465!4d-122.5982202'} target="_blank" rel="noopener noreferrer" aria-label="Google">
+                  <BsGoogle />
+                </SocialIconLink>
+              </Col>
             </Row>
           </MobileSocialIcons>
 
@@ -114,7 +102,7 @@ const Header = () => {
 
           <Container style={{ textAlign: 'right' }}>
             <Row>              
-              {/* On scroll these will display next to links */}
+              {/* On scroll these will display next to links in the second navbar */}
                 {
                   showMobileIconsOnScroll && (
                     <>

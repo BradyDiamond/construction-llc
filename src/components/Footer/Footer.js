@@ -36,13 +36,10 @@ const Footer = () => {
         </LinkSec>
 
         <SocialIcons>
-          <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
+          <SocialIconLink href={'https://www.facebook.com/profile.php?id=100076005857293'} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FaFacebook style={{ marginRight: '20px' }}/>
           </SocialIconLink>
-          <SocialIconLink href={'//www.youtube.com'} target="_blank" aria-label="Youtube">
-            <FaYoutube style={{ marginRight: '20px' }}/>
-          </SocialIconLink>
-          <SocialIconLink href={'//www.google.com'} target="_blank" aria-label="Google">
+          <SocialIconLink href={'https://www.google.com/maps/place/Worrall+Contractors+LLC/@45.3230465,-122.5982202,15z/data=!4m5!3m4!1s0x0:0x5c1581eeb5158534!8m2!3d45.3230465!4d-122.5982202'} target="_blank" rel="noopener noreferrer" aria-label="Google">
             <BsGoogle style={{ marginRight: '30px' }}/>
           </SocialIconLink>
         </SocialIcons>          
@@ -68,13 +65,10 @@ const Footer = () => {
 
         
         <MobileSocialIcons className="mobile-socials">
-          <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
+          <SocialIconLink href={'https://www.facebook.com/profile.php?id=100076005857293'} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FaFacebook style={{ marginRight: '10px' }}/>
           </SocialIconLink>
-          <SocialIconLink href={'//www.youtube.com'} target="_blank" aria-label="Youtube">
-            <FaYoutube style={{ marginRight: '10px' }} />
-          </SocialIconLink>
-          <SocialIconLink href={'//www.google.com'} target="_blank" aria-label="Google">
+          <SocialIconLink href={'https://www.google.com/maps/place/Worrall+Contractors+LLC/@45.3230465,-122.5982202,15z/data=!4m5!3m4!1s0x0:0x5c1581eeb5158534!8m2!3d45.3230465!4d-122.5982202'} target="_blank" rel="noopener noreferrer" aria-label="Google">
             <BsGoogle />
           </SocialIconLink>
         </MobileSocialIcons>
