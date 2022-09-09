@@ -17,16 +17,14 @@ img {
   transform-style: preserve-3d;
   box-shadow: 12px 12px 14px #000000;
 }
-
 `;
 
 export const CardA = styled.div`
   align-items: left;
-  pointer: finger;
-
+  cursor: pointer;
 `;
 
-export const CardB = styled.div` {
+export const CardB = styled.div`
   align-items: left;         
 `;
 
@@ -42,7 +40,6 @@ export const Img = styled.img`
   margin-top: -10vh;
   overflow: none;
   flex-direction: center;
-}
 `;
 
 export const Img2 = styled.img`
@@ -54,7 +51,6 @@ export const Img2 = styled.img`
   margin-top:1vh;
   overflow: none;
   box-shadow: none;
-}
 `;
 export const Img3 = styled.img`
   margin-left:20vw;  
@@ -66,7 +62,6 @@ export const Img3 = styled.img`
   position: fixed;
   margin-top: 3vh;
   display:none
-}
 `;
 
 export const TextBefore = styled.div`
@@ -78,15 +73,13 @@ export const TextBefore = styled.div`
   font-size: 15vw;
   font-weight: bold;
   position: relative;
-  margin top: 10vw;
-  // margin-right: 6vw;
+  margin-top: 10vw;
   color: white;
   text-shadow: 12px 12px 14px #000000;
   object-fit: cover;
   flex-direction: center;
   padding: 0px 0px;
   &:hover {transform: scale(1.09);}
-  
 `;  
 
 export const TextFlipped = styled.div`
@@ -103,9 +96,8 @@ export const TextFlipped = styled.div`
 `;  
 
 //  function to stop page from exceeding 100vw
-export const Page = styled.div` {                                             
+export const Page = styled.div`                                            
   width: 100vw;
   overflow-x: hidden;
-
 `;
 
