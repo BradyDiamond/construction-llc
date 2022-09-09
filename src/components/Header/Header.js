@@ -8,7 +8,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { animateScroll as scroll, scroller } from 'react-scroll'
 import '../App.css';
 
 const Header = () => {
@@ -107,7 +106,10 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href='/'>Home</Nav.Link>
-            <Nav.Link href='/gallery'>Gallery</Nav.Link>
+            <Nav.Link href='#about'>About</Nav.Link>
+            <Nav.Link href='#services'>Services</Nav.Link>
+            <Nav.Link href='#map'>Map</Nav.Link>
+            <Nav.Link href='#gallery'>Gallery</Nav.Link>
           </Nav>
 
           <Container style={{ textAlign: 'right' }}>
