@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ServicesSec = styled.div`
   background: white;
+  // overflow-x: hidden;
 `;
 
 export const ContactSection = styled.div`

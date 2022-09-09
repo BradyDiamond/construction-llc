@@ -34,14 +34,15 @@ const ServicesSection = () => {
             <CardFlip 
             img="https://images.unsplash.com/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80"
             text="services"
-            img2="https://images.unsplash.com/photo-1590635023142-73c3d34f2805?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            textFlipped0="Deck Construction & Repair-"        
+            img2="https://images.unsplash.com/photo-1562408589-4b96d09ec657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            img3="https://images.unsplash.com/photo-1562408589-4b96d09ec657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            textFlipped0="Window And Glass Specialists-"        
             textFlipped1="Roof and Exterior Cleaning-"
             textFlipped2="Gutter Cleaning & Repair-"
-            textFlipped3="Remodels-"
+            textFlipped3="Deck Construction & Repair-"
+            textFlipped5="Ngravida laoreet ante nec sollicitudin-"     
             textFlipped4="Dry Rot Repair-"
-            textFlipped5="Window Replacement-" 
-            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+            textFlipped6="-(360)555-5555-"/>
           </div> 
           <br/>
           <div className='services-tagline'>
