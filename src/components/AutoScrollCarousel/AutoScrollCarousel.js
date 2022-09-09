@@ -41,50 +41,50 @@ export default function AutoScrollCarousel() {
     ]
   }
 
-  // Images are sized at 558px width & 700px height
-
+  // Images are direct routed from the public images directory
+  // Didn't know what to put for alts here
   const bannerImages = [
     {
       imageSrc:
-        'images/services-page-banner/hardwood-floors.webp',
+        'images/services-page-banner/bathroom-remodel.webp',
       alt:
-        'A remodeled living room with hardwood floors'
+        'A remodeled bathroom'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen.webp',
+        'images/services-page-banner/wood-deck.webp',
       alt:
-        'A minimalist styled kitchen'
+        'Wooden deck with built in seats'
     },
     {
       imageSrc:
-        'images/services-page-banner/bathroom.webp',
+        'images/services-page-banner/door-with-glass.webp',
       alt:
         'Remodeled bathroom with overhead shower and granite sinks'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen-modern.webp',
+        'images/services-page-banner/kitchen-windows.webp',
       alt:
-        'A modern styled kitchen'
+        'Window replacement in a kitchen'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen-remodel.webp',
+        'images/services-page-banner/shed-interior.webp',
       alt:
-        'A remodeled kitchen displaying a splash wall above the oven'
+        'A shed with custom built shelves'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen-floor-remodel.webp',
+        'images/services-page-banner/deck-stairs.webp',
       alt:
-        'Dark hardwood floors in a kitchen'
+        'Custom built deck with stairs'
     },
     {
       imageSrc:
-        'images/services-page-banner/traditional-kitchen-remodel.webp',
+        'images/services-page-banner/white-fireplace.webp',
       alt:
-        'A traditional styled kitchen'
+        'Remodeled white fireplace custom made'
     },
   ]
 
@@ -92,7 +92,7 @@ export default function AutoScrollCarousel() {
     <>
       <Slider {...sliderSettings}>
         {bannerImages.map((image, index) => (          
-          <img alt={image.alt} src={image.imageSrc} key={index} height="380" border="1px solid black" className="" />          
+          <img alt={image.alt} src={image.imageSrc} key={index} height="380" border="1px solid black" />          
         ))}
       </Slider>
     </>
