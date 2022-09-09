@@ -46,43 +46,43 @@ export default function AutoScrollCarousel() {
   const bannerImages = [
     {
       imageSrc:
-        'images/services-page-banner/bathroom-remodel.webp',
+        'images/auto-scroll-carousel/bathroom-remodel.webp',
       alt:
         'A remodeled bathroom'
     },
     {
       imageSrc:
-        'images/services-page-banner/wood-deck.webp',
+        'images/auto-scroll-carousel/wood-deck.webp',
       alt:
         'Wooden deck with built in seats'
     },
     {
       imageSrc:
-        'images/services-page-banner/door-with-glass.webp',
+        'images/auto-scroll-carousel/door-with-glass.webp',
       alt:
         'Remodeled bathroom with overhead shower and granite sinks'
     },
     {
       imageSrc:
-        'images/services-page-banner/kitchen-windows.webp',
+        'images/auto-scroll-carousel/kitchen-windows.webp',
       alt:
         'Window replacement in a kitchen'
     },
     {
       imageSrc:
-        'images/services-page-banner/shed-interior.webp',
+        'images/auto-scroll-carousel/shed-interior.webp',
       alt:
         'A shed with custom built shelves'
     },
     {
       imageSrc:
-        'images/services-page-banner/deck-stairs.webp',
+        'images/auto-scroll-carousel/deck-stairs.webp',
       alt:
         'Custom built deck with stairs'
     },
     {
       imageSrc:
-        'images/services-page-banner/white-fireplace.webp',
+        'images/auto-scroll-carousel/white-fireplace.webp',
       alt:
         'Remodeled white fireplace custom made'
     },
