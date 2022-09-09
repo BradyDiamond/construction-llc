@@ -75,6 +75,7 @@ export const MobileFooterSec = styled.div`
 `;
 
 export const MobileEmailAddress = styled.a`
+  flex-direction: column;
   color: rgba(0, 0, 0, 0.55);
   font-size: 15px;
   text-decoration: none;
@@ -84,6 +85,10 @@ export const MobileEmailAddress = styled.a`
   &:hover {
     color: rgba(0, 0, 0, 0.9);
     transition: 0.3s ease-out;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
   }
 `;
 

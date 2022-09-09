@@ -22,7 +22,9 @@ const Footer = () => {
     <>
       <FooterSec>   
         <LinkSec>
-          <FooterLogo src='images/logo/small-logo.webp' style={{ marginLeft: '20px'}} onClick={scrollTop} />
+          <a href="/">
+            <FooterLogo src='images/logo/small-logo.webp' style={{ marginLeft: '20px'}} className='footer-logo' />
+          </a>
           <PhoneNumber href="tel: 9014010079">
             <BsTelephoneFill style={{ marginRight: '5px'}} />
             CALL NOW (971)-401-0079
@@ -51,10 +53,14 @@ const Footer = () => {
         <Container>
           <Row>
             <Col xl={true}>
-              <FooterLogo src='images/logo/small-logo.webp' />  
+              <a href='/'>
+                <FooterLogo src='images/logo/small-logo.webp' /> 
+              </a> 
             </Col>
-            <Col>
+            <Col xl={true}>
               <MobilePhoneNumber href="tel: 9714010079">(971)-401-0079</MobilePhoneNumber><br />
+            </Col>
+            <Col xl={true}>
               <MobileEmailAddress href="mailto: nickworrall0910@gmail.com">NickWorrall0910@gmail.com</MobileEmailAddress>
             </Col>
           </Row>
