@@ -37,11 +37,10 @@ function Gallery() {
 
   return (
     <>
-    <h1>Testing Gallery</h1>
     <div className={model? "model open" : "model" }>
       <img src={tempimgSrc} />
       <div className="modelClose">
-        <i class="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
+        <i className="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
       </div> 
     </div> 
 
@@ -54,11 +53,6 @@ function Gallery() {
         )
       })}
     </div>
-    {/* <div>
-      <div style={{ padding: '300px 0px', background: 'gray'}}>
-
-      </div>
-    </div> */}
     
     </>
   )
