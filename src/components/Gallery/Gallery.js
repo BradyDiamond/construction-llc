@@ -82,11 +82,18 @@ function Gallery() {
 
   return (
     <>
+<<<<<<< HEAD
     <h1>Test Gallery</h1>
     <div className={model? "model open" : "model" }>
       <img src={tempimgSrc} />
       <div className="modelClose" >
         <i class="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
+=======
+    <div className={model? "model open" : "model" }>
+      <img src={tempimgSrc} />
+      <div className="modelClose">
+        <i className="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
+>>>>>>> 2c663df1b02d0f17241e1b2d368518064dabbdba
       </div> 
     </div> 
 
@@ -104,10 +111,6 @@ function Gallery() {
         )
       })}
     </div>
-    {/* <div>
-      <div style={{ padding: '300px 0px', background: 'gray'}}>
-      </div>
-    </div> */}
     
     </>
   )
