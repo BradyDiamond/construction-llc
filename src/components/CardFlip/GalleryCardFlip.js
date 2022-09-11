@@ -17,22 +17,25 @@ const GalleryCardFlip = (props) => {
   
   const handleClick = () => {
     setIsFlipped(!isFlipped);
-    // showGallery();
+    showGallery();
     
   };
   const handleClose = () => {   
     setIsFlipped(!isFlipped);
-    // hideGallery();
+    hideGallery();
   };
 
 
-  // function showGallery() {
-  //   document.getElementById("gallery-card").classList.remove("hidden");
-  // }
+  function showGallery() {
+    document.getElementById("gallery-card").classList.remove("hidden");
+    document.getElementById("gallery-card").classList.add("visible");
+  }
 
-  // function hideGallery() {
-  //   document.getElementById("gallery-card").classList.add("hidden");
-  // }
+  function hideGallery() {
+    document.getElementById("gallery-card").classList.remove("visible");
+    document.getElementById("gallery-card").classList.add("hidden");
+  }
+
 
 
     return (
@@ -53,11 +56,11 @@ const GalleryCardFlip = (props) => {
           </Row>
       
             <CardB >
-              <div onClick={handleClose}  className='gal-back-btn'>X 
-                <div >
+              <div onClick={handleClose}  className='gal-back-btn'>X</div>    
+                <div id='gallery-card' className="hidden">
                   <Gallery  />  
                 </div>   
-              </div>                                                      
+                                                              
             </CardB>  
           
         </ReactCardFlip>

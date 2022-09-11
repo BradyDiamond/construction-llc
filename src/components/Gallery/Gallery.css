@@ -93,3 +93,6 @@
 .hidden{
   display: none;
 }
+.visible{
+  display: all;
+}
