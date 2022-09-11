@@ -112,11 +112,8 @@ export const TextFlipped = styled.div`
   }
 `;  
 
-//  function to stop page from exceeding 100vw
-export const Page = styled.div`                                            
-  width: 100vw;
-  overflow-x: hidden;
-`;
+
+
 
   
 

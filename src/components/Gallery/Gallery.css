@@ -89,10 +89,28 @@
   height: 2rem;
   padding: 5px;
   cursor: pointer;
+  margin-right: 10vw;
 }
 .hidden{
   display: none;
 }
 .visible{
   display: all;
+}
+
+.gal-back-btn{
+  border: solid 1px #000000;
+  height: 9.9vh;
+  width: 9.9vh;
+  margin: 10px auto;
+  font-size: 6.3vh;
+  background-color: #f68a0f;
+  box-shadow: 3px 15px 8px -10px rgba(1, 1, 1.9, 1.9);
+  text-align: center;
+  align-items: Right;
+  border-radius: 50%;
+  transition: all 0.13s ease-in;
+  text-shadow: none;
+  font-family: 'Kanit', sans-serif;
+  color: white;
 }

@@ -57,9 +57,10 @@ const GalleryCardFlip = (props) => {
       
             <CardB >
               <div onClick={handleClose}  className='gal-back-btn'>X</div>    
-                <div id='gallery-card' className="hidden">
-                  <Gallery  />  
-                </div>   
+              <div id='gallery-card' className="hidden">
+                <Gallery  />  
+              </div>   
+              <div onClick={handleClose}  className='gal-back-btn'>X</div> 
                                                               
             </CardB>  
           

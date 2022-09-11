@@ -19,7 +19,7 @@ const ServicesSection = () => {
           <CardFlip 
           img="https://images.unsplash.com/photo-1586864387789-628af9feed72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
           text="about us"
-          img2="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
+          img3="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
           textFlipped0="Lorem ipsum dolor sit amet-"
           textFlipped1="consectetur adipiscing elit-"
           textFlipped2="Ut cursus enim id suscipit pretiumr-"
@@ -35,7 +35,6 @@ const ServicesSection = () => {
             <CardFlip 
             img="https://images.unsplash.com/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80"
             text="services"
-            img2="https://images.unsplash.com/photo-1562408589-4b96d09ec657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
             img3="https://images.unsplash.com/photo-1562408589-4b96d09ec657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
             textFlipped0="Window And Glass Specialists-"        
             textFlipped1="Roof and Exterior Cleaning-"
@@ -74,8 +73,7 @@ const ServicesSection = () => {
           </div> 
           <br/>          
           <div className='services-tagline'>
-            <ServicesTagline><img src='' alt="" /></ServicesTagline>
-           
+            <ServicesTagline><img src='' alt="" /></ServicesTagline>           
           </div>
         </div>   
       </ServicesSec>
