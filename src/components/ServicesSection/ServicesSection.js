@@ -3,6 +3,7 @@ import { ServicesSec, ServicesTagline } from './ServicesSection.elements';
 import './ServicesSectionStyles.css';
 import CardFlip from '../CardFlip/CardFlip';
 import Map from '../CardFlip/img/service-area-map.png';
+import GalleryCardFlip from '../CardFlip/GalleryCardFlip';
 
 const ServicesSection = () => {
   return(
@@ -66,17 +67,10 @@ const ServicesSection = () => {
             <ServicesTagline></ServicesTagline>
           </div>
           <div className='services-card-flip' id='gallery'>
-            <CardFlip 
+            <GalleryCardFlip 
             img="https://images.unsplash.com/photo-1426927308491-6380b6a9936f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
             text="gallery"
-            img2="https://images.pexels.com/photos/11590268/pexels-photo-11590268.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            textFlipped0="Deck Construction & Repair-"
-            textFlipped1="Roof and Exterior Cleaning-"
-            textFlipped2="Gutter Cleaning & Repair-"
-            textFlipped3="Remodels-"
-            textFlipped4="Dry Rot Repair-"
-            textFlipped5="Window Replacement-" 
-            textFlipped6="CALL (360)555-5555 FOR A QUOTE!-"/>
+        />
           </div> 
           <br/>          
           <div className='services-tagline'>

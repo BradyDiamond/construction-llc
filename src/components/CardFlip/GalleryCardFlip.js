@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 import { PropTypes } from 'prop-types';
-import { Container, CardA, CardB, Img, Img2, Img3, TextBefore, TextFlipped, Popout} from './CardFlip.elements';
+import { Container, CardA, CardB, Img,TextBefore} from './CardFlip.elements';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Gallery from '../Gallery/Gallery';
@@ -17,22 +17,22 @@ const GalleryCardFlip = (props) => {
   
   const handleClick = () => {
     setIsFlipped(!isFlipped);
-    showGallery();
+    // showGallery();
     
   };
   const handleClose = () => {   
     setIsFlipped(!isFlipped);
-    hideGallery();
+    // hideGallery();
   };
-  // write a function to remove the class of "hidden" on the gallery div
 
-  function showGallery() {
-    document.getElementById("gallery").classList.remove("hidden");
-  }
 
-  function hideGallery() {
-    document.getElementById("gallery").classList.add("hidden");
-  }
+  // function showGallery() {
+  //   document.getElementById("gallery-card").classList.remove("hidden");
+  // }
+
+  // function hideGallery() {
+  //   document.getElementById("gallery-card").classList.add("hidden");
+  // }
 
 
     return (
@@ -52,12 +52,12 @@ const GalleryCardFlip = (props) => {
             </CardA>  
           </Row>
       
-      
             <CardB >
-            <div onClick={handleClose}  className='gal-back-btn'>X</div>   
-              <div id="gallery" className="hidden">
-                <Gallery />  
-              </div>                                                         
+              <div onClick={handleClose}  className='gal-back-btn'>X 
+                <div >
+                  <Gallery  />  
+                </div>   
+              </div>                                                      
             </CardB>  
           
         </ReactCardFlip>
