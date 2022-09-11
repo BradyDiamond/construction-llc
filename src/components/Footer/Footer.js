@@ -22,7 +22,9 @@ const Footer = () => {
     <>
       <FooterSec>   
         <LinkSec>
-          <FooterLogo src='images/logo/small-logo.webp' style={{ marginLeft: '20px'}} onClick={scrollTop} />
+          <a href="/">
+            <FooterLogo src='images/logo/small-logo.webp' style={{ marginLeft: '20px'}} className='footer-logo' />
+          </a>
           <PhoneNumber href="tel: 9014010079">
             <BsTelephoneFill style={{ marginRight: '5px'}} />
             CALL NOW (971)-401-0079
@@ -34,13 +36,10 @@ const Footer = () => {
         </LinkSec>
 
         <SocialIcons>
-          <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
+          <SocialIconLink href={'https://www.facebook.com/profile.php?id=100076005857293'} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FaFacebook style={{ marginRight: '20px' }}/>
           </SocialIconLink>
-          <SocialIconLink href={'//www.youtube.com'} target="_blank" aria-label="Youtube">
-            <FaYoutube style={{ marginRight: '20px' }}/>
-          </SocialIconLink>
-          <SocialIconLink href={'//www.google.com'} target="_blank" aria-label="Google">
+          <SocialIconLink href={'https://www.google.com/maps/place/Worrall+Contractors+LLC/@45.3230465,-122.5982202,15z/data=!4m5!3m4!1s0x0:0x5c1581eeb5158534!8m2!3d45.3230465!4d-122.5982202'} target="_blank" rel="noopener noreferrer" aria-label="Google">
             <BsGoogle style={{ marginRight: '30px' }}/>
           </SocialIconLink>
         </SocialIcons>          
@@ -51,10 +50,14 @@ const Footer = () => {
         <Container>
           <Row>
             <Col xl={true}>
-              <FooterLogo src='images/logo/small-logo.webp' />  
+              <a href='/'>
+                <FooterLogo src='images/logo/small-logo.webp' /> 
+              </a> 
             </Col>
-            <Col>
+            <Col xl={true}>
               <MobilePhoneNumber href="tel: 9714010079">(971)-401-0079</MobilePhoneNumber><br />
+            </Col>
+            <Col xl={true}>
               <MobileEmailAddress href="mailto: nickworrall0910@gmail.com">NickWorrall0910@gmail.com</MobileEmailAddress>
             </Col>
           </Row>
@@ -62,13 +65,10 @@ const Footer = () => {
 
         
         <MobileSocialIcons className="mobile-socials">
-          <SocialIconLink href={'//www.facebook.com'} target="_blank" aria-label="Facebook">
+          <SocialIconLink href={'https://www.facebook.com/profile.php?id=100076005857293'} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FaFacebook style={{ marginRight: '10px' }}/>
           </SocialIconLink>
-          <SocialIconLink href={'//www.youtube.com'} target="_blank" aria-label="Youtube">
-            <FaYoutube style={{ marginRight: '10px' }} />
-          </SocialIconLink>
-          <SocialIconLink href={'//www.google.com'} target="_blank" aria-label="Google">
+          <SocialIconLink href={'https://www.google.com/maps/place/Worrall+Contractors+LLC/@45.3230465,-122.5982202,15z/data=!4m5!3m4!1s0x0:0x5c1581eeb5158534!8m2!3d45.3230465!4d-122.5982202'} target="_blank" rel="noopener noreferrer" aria-label="Google">
             <BsGoogle />
           </SocialIconLink>
         </MobileSocialIcons>

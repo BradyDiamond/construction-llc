@@ -19,7 +19,6 @@ img {
  
 
 }
-
 `;
 
 export const CardA = styled.div`
@@ -45,7 +44,6 @@ export const Img = styled.img`
   margin-top: -10vh;
   overflow: none;
   flex-direction: center;
-}
 `;
 
 export const Img2 = styled.img`
@@ -59,7 +57,6 @@ export const Img2 = styled.img`
   box-shadow: none;
   transform: rotateY(180deg);
   mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
-}
 `;
 
 export const Img3 = styled.img`
@@ -74,7 +71,6 @@ export const Img3 = styled.img`
   margin-top: 8vh;
   ;
 
-}
 `;
 
 export const TextBefore = styled.div`
@@ -86,8 +82,7 @@ export const TextBefore = styled.div`
   font-size: 15vw;
   font-weight: bold;
   position: relative;
-  margin top: 10vw;
-  // margin-right: 6vw;
+  margin-top: 10vw;
   color: white;
   text-shadow: 12px 12px 14px #000000;
   object-fit: cover;
@@ -118,11 +113,12 @@ export const TextFlipped = styled.div`
 `;  
 
 //  function to stop page from exceeding 100vw
-export const Page = styled.div` {                                             
+export const Page = styled.div`                                            
   width: 100vw;
   overflow-x: hidden;
-
 `;
+
+  
 
   
   

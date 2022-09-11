@@ -20,8 +20,30 @@
 
 .gallery .pics:hover{
   filter: opacity(.10);
-
 }
+
+.gallery .description {
+  visibility: hidden;
+  color: black;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.gallery:hover .description {
+  visibility: visible;
+}
+
 
 .model {
   width: 100%;
@@ -32,7 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3888C7;
+  background-color: white;
   transition:opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
   visibility: hidden;
   opacity: 0;
@@ -50,7 +72,6 @@
 .model img {
   width: auto;
   max-width: 100%;
-  height: auto;
   max-height: 100%;
   display: block;
   line-height: 0;

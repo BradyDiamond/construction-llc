@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Footer from './Footer/Footer';
 import Home from './pages/Home/Home';
 import Gallery from './Gallery/Gallery';
+import Header from './Header/Header';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import ScrollToTop from './ScrollToTop';
@@ -15,13 +16,13 @@ function App() {
     <div className="App">
       <Router>     
         <ScrollToTop />
+        <Header />
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/gallery' exact element={<Gallery />} />
         </Routes>
         <Footer />
       </Router> 
-
     </div>
   );
 }

@@ -6,11 +6,12 @@ export const SocialHeaderSec = styled.div`
   padding-top: 10px;
   padding-bottom: 5px;
   padding-left: 30px;
+  padding-right: 30px;
   background: #3888C7;
   border: 1px;
   border-bottom-style: solid;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 800px) {
     display: none;
   }
 `;
@@ -30,14 +31,14 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const SocialIcons = styled.div`
-  margin-right: 40px;
+  
   display: flex;
   justify-content: right;
 `;
 
 export const SocialIconLink = styled.a`
   margin-bottom: 5px;   
-  margin-right: 30px;
+  
   color: rgba(0, 0, 0, 0.55);
   font-size: 22px;
 
@@ -121,16 +122,13 @@ export const MobilePhoneNumber = styled.a`
 `;
 
 export const MobileLinkSec = styled.div`
-    text-align: right;
+    text-align: center;
 `;
 
 export const MobileSocialIcons = styled.div`
 
   @media screen and (max-width: 955px) {
-    display: flex;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    justify-content: right;
+    margin: auto;
     
   }
 
