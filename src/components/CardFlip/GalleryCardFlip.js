@@ -7,7 +7,7 @@ import { Container, CardA, CardB, Img, Img2, Img3, TextBefore, TextFlipped, Popo
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Gallery from '../Gallery/Gallery';
-import { FaAllergies } from 'react-icons/fa';
+import "../Gallery/Gallery.css";
 
 
 const GalleryCardFlip = (props) => {
@@ -17,11 +17,23 @@ const GalleryCardFlip = (props) => {
   
   const handleClick = () => {
     setIsFlipped(!isFlipped);
+    showGallery();
     
-
   };
+  const handleClose = () => {   
+    setIsFlipped(!isFlipped);
+    hideGallery();
+  };
+  // write a function to remove the class of "hidden" on the gallery div
 
- 
+  function showGallery() {
+    document.getElementById("gallery").classList.remove("hidden");
+  }
+
+  function hideGallery() {
+    document.getElementById("gallery").classList.add("hidden");
+  }
+
 
     return (
         <>
@@ -42,8 +54,10 @@ const GalleryCardFlip = (props) => {
       
       
             <CardB >
-            <span onClick={handleClick}  className='gal-back-btn'>X</span>   
-                <Gallery />                                                           
+            <div onClick={handleClose}  className='gal-back-btn'>X</div>   
+              <div id="gallery" className="hidden">
+                <Gallery />  
+              </div>                                                         
             </CardB>  
           
         </ReactCardFlip>
