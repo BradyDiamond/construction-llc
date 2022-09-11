@@ -41,7 +41,7 @@ const GalleryCardFlip = (props) => {
     return (
         <>
         <Container>
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={0.6}>
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" flipSpeedBackToFront={0.6} flipSpeedFrontToBack={git .00006}>
           <Row >
             <CardA onClick={handleClick}>  
               <Col>
