@@ -25,12 +25,7 @@ function Gallery() {
     },
     {
       id: 2,
-<<<<<<< HEAD
       imgSrc: Img2
-=======
-      imgSrc: Img2,
-      description: 'Glass installment in Kitchen',
->>>>>>> main
     },
     {
       id: 3,
@@ -85,18 +80,11 @@ function Gallery() {
 
   return (
     <>
-<<<<<<< HEAD
     <br></br>
     <div className={model? "model open" : "model" }>
       <img src={tempimgSrc} />
       <div className="modelClose">
-        <i class="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
-=======
-    <div className={model? "model open" : "model" }>
-      <img src={tempimgSrc} />
-      <div className="modelClose">
         <i className="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
->>>>>>> main
       </div> 
     </div> 
 
