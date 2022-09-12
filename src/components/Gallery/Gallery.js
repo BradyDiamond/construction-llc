@@ -13,7 +13,6 @@ import Img9 from './Images/contractors9.jpg';
 import Img10 from './Images/contractors10.jpg';
 import Img11 from './Images/contractors11.jpg';
 import Img12 from './Images/contractors12.jpg';
-import { Card } from "react-bootstrap";
 
 
 function Gallery() {
@@ -22,12 +21,11 @@ function Gallery() {
     {
       id: 1,
       imgSrc: Img1,
-      description: 'Contractors Photo',
+      alt: 'New Windows installed on side of house'
     },
     {
       id: 2,
-      imgSrc: Img2,
-      description: 'Glass installment in Kitcken',
+      imgSrc: Img2
     },
     {
       id: 3,
@@ -82,35 +80,28 @@ function Gallery() {
 
   return (
     <>
-<<<<<<< HEAD
-    <h1>Test Gallery</h1>
-    <div className={model? "model open" : "model" }>
-      <img src={tempimgSrc} />
-      <div className="modelClose" >
-        <i class="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
-=======
+    <br></br>
     <div className={model? "model open" : "model" }>
       <img src={tempimgSrc} />
       <div className="modelClose">
-        <i className="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
->>>>>>> 2c663df1b02d0f17241e1b2d368518064dabbdba
+        <i class="fa-solid fa-xmark fa-2xl" onClick={()=> setModel(false)} /> 
       </div> 
     </div> 
 
     <div className="gallery">
       {data.map((item, index)=> {
         return( 
-          <Card>
           <div className="pics" key={index} onClick={() => getImg(item.imgSrc)} >
-            <img className="galleryImage" src={item.imgSrc} style ={{width: '100%' }}/>
-            <div className="description">
-            <p>{item.description}</p>
-            </div>
+            <img src={item.imgSrc} style ={{width: '100%' }}/>
           </div>
-          </Card>
         )
       })}
     </div>
+    
+    {/* <div>
+      <div style={{ padding: '300px 0px', background: 'gray'}}>
+      </div>
+    </div> */}
     
     </>
   )
