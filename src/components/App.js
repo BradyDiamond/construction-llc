@@ -16,11 +16,11 @@ function App() {
     <div className="App">
       <Router>     
         <ScrollToTop />
-        <Header />
+        <Header />        
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/gallery' exact element={<Gallery />} />
-        </Routes>
+        </Routes>  
         <Footer />
       </Router> 
     </div>

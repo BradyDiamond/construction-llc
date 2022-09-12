@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 import { PropTypes } from 'prop-types';
@@ -11,7 +10,7 @@ import { MdBackspace } from 'react-icons/md';
 
 const CardFlip = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [isZoomed, setIsZoomed] = useState(false);
+  
   
 
   
@@ -20,10 +19,7 @@ const CardFlip = (props) => {
 
   };
 
-  const handleZoom = () => {
-    setIsZoomed(!setIsZoomed);
 
-  };
 
 
     return (
